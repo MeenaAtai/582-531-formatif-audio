@@ -1,4 +1,4 @@
-#N canvas 920 599 1132 1097 12;
+#N canvas 605 18 1132 1097 12;
 #X obj 330 974 netsend -u -b;
 #X msg 492 947 disconnect;
 #X obj 113 142 pdchoco/slip_parse;
@@ -36,11 +36,9 @@
 #X obj 729 618 pdchoco/stream_smooth 0.1.0.1;
 #X obj 729 644 pdchoco/scope 0 1;
 #X text 947 613 lisser les valeurs;
-#X msg 190 19 baud 115200 \, open 1;
 #X msg 241 52 close;
-#X obj 107 229 route bouton pot;
-#X obj 691 563 / 1023;
-#X obj 691 590 * 63;
+#X msg 190 19 baud 115200 \, open 4;
+#X obj 107 229 route but pot;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 0;
@@ -57,7 +55,7 @@
 #X connect 17 0 14 0;
 #X connect 18 0 19 0;
 #X connect 19 0 34 0;
-#X connect 19 0 40 0;
+#X connect 19 0 33 0;
 #X connect 20 0 27 0;
 #X connect 21 0 27 0;
 #X connect 22 0 30 0;
@@ -75,5 +73,3 @@
 #X connect 38 0 5 0;
 #X connect 39 0 6 0;
 #X connect 39 1 8 0;
-#X connect 40 0 41 0;
-#X connect 41 0 33 0;
